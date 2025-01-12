@@ -20,9 +20,12 @@ import javax.swing.JOptionPane;
  */
 public class ConnectionFactory {
 
-    private static String host = "banco-solicitacao-silasnas2018-a72f.c.aivencloud.com",
-            port = "25355", db = "defaultdb", user = "avnadmin", password = "AVNS_NRR0dTeI-96TZd2u-Jh";
-    private static String url = "mysql://avnadmin:AVNS_NRR0dTeI-96TZd2u-Jh@banco-solicitacao-silasnas2018-a72f.c.aivencloud.com:25355/defaultdb";
+    private static String host = "host",
+            port = "port", 
+            db = "db", 
+            user = "user", 
+            password = "p";
+    private static String url = "url";
 
     public ConnectionFactory() {
 
