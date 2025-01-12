@@ -24,7 +24,6 @@ public class ConnectionFactory {
             port = "port", 
             db = "db", 
             user = "user"; 
-     //       password = "p";
     private static String url = "url";
 
     public ConnectionFactory() {
