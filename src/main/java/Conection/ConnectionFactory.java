@@ -23,8 +23,8 @@ public class ConnectionFactory {
     private static String host = "host",
             port = "port", 
             db = "db", 
-            user = "user", 
-            password = "p";
+            user = "user"; 
+     //       password = "p";
     private static String url = "url";
 
     public ConnectionFactory() {
@@ -43,9 +43,9 @@ public class ConnectionFactory {
     //mysql://user.password@host:port/database  
     private static final String URL
             = String.format(String.format(
-                    "jdbc:mysql://%s:%s@%s:%s/%s",
+                    "jdbc:mysql://%s:%s@%s:%s/",
                     user,
-                    password,
+       //             password,
                     host,
                     port,
                     db
