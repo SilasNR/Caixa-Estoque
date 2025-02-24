@@ -4,7 +4,7 @@
  */
 package Conection;
 
-import com.mysql.cj.xdevapi.PreparableStatement;
+import com.mysql.cj.xdevapi.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -12,7 +12,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -20,11 +19,12 @@ import javax.swing.JOptionPane;
  */
 public class ConnectionFactory {
 
-    private static String host = "host",
-            port = "port", 
-            db = "db", 
-            user = "user"; 
-    private static String url = "url";
+    private static String host = "banco-solicitacao-silasnas2018-a72f.c.aivencloud.com",
+            port = "25355", 
+            db = "defaultdb", 
+            user = "avnadmin", 
+            password = "AVNS_NRR0dTeI-96TZd2u-Jh";
+    private static String url = "mysql://avnadmin:AVNS_NRR0dTeI-96TZd2u-Jh@banco-solicitacao-silasnas2018-a72f.c.aivencloud.com:25355/defaultdb";
 
     public ConnectionFactory() {
 
@@ -42,9 +42,9 @@ public class ConnectionFactory {
     //mysql://user.password@host:port/database  
     private static final String URL
             = String.format(String.format(
-                    "jdbc:mysql://%s:%s@%s:%s/",
+                    "jdbc:mysql://%s:%s@%s:%s/%s",
                     user,
-       //             password,
+                    password,
                     host,
                     port,
                     db
